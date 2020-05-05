@@ -34,6 +34,5 @@ codeunit 50101 TestCodeUnit_Basics // https://www.archerpoint.com/blog/Posts/usi
         Message('summe der Parameter %1 & %2 is %3', number1, number2, total);
     end;
 
-    //arbeite dich ma mit ein!
     //schleife, if then else, error
 }

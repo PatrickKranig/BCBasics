@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0", //eine anleitung wie man das ganze zum laufen bekommt auf meinen gDrive https://drive.google.com/open?id=1z_HnpCG_gK1kw0KcqmkrRAesnyf9IYZG
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "localhost",// euer BC Server Name auf den ihr entwickelt... 
+            "server": "http://localhost:8080/BC150", // euer BC Server Name auf den ihr entwickelt... https://www.dynamicssquare.com.au/blog/dynamics-365/connect-visual-studio-code-with-business-central/
+            "port": 7049, // <- add this!! develper port - in administration einsehbar (desweiteren denkt an die URL setzen in der Client Services)
+            "serverInstance": "BC150",
+            "authentication": "Windows", // auf Windows ändern wenn so in BS "Benutzer" eingestellt
+           // "startupObjectId": 22, // wo er reinspringt nach publish!
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            //https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-retaining-data-after-publishing
+            "schemaUpdateMode": "Recreate"  //Der Standardwert für ist auf den Synchronisierungsmodus festgelegt, d. h., jedes Mal, wenn Sie eine Erweiterung auf dem Entwicklungsserver veröffentlichen, bleiben die zuvor eingegebenen Daten erhalten. Wenn Sie die Beispieldaten nicht mit jeder Veröffentlichung synchronisieren möchten, können Sie die Einstellung z. B. mit der im folgenden Beispiel gezeigten Syntax ändern.schemaUpdateModeschemaUpdateModeSynchronizeRecreate
+            //Wenn Sie den Schemaaktualisierungsmodus auf Neu erstellenfestlegen, werden alle Tabellen und Tabellenerweiterungen bei jeder Veröffentlichung neu erstellt, was bedeutet, dass alle Daten in diesen Tabellen verloren gehen. Dies bedeutet, dass Sie leere Datensätze erhalten, wenn Sie Ihre Erweiterung veröffentlichen.
+        }
+    ]
+}
