@@ -34,6 +34,7 @@ codeunit 50101 TestCodeUnit_Basics // https://www.archerpoint.com/blog/Posts/usi
         Message('summe der Parameter %1 & %2 is %3', number1, number2, total);
     end;
 
-    //hier was gittige neues
-    //schleife, if then else, error
+    // try catch funktionen http://www.msdynamics.de/viewtopic.php?f=87&t=36732
+
+    //weiter funktionen https://navision24.de/funktionen/index.html
 }
